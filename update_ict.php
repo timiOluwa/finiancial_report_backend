@@ -10,7 +10,7 @@
     $result = mysqli_query($conn,$sql);
 
     if(!$result){
-        die("wrong syntax". mysqli_error());
+        die("wrong syntax". mysqli_error($conn));
     }else{
         $row = mysqli_fetch_assoc($result);
 
@@ -22,8 +22,8 @@
 
 include('./include/connect.php');
     if(isset($_POST['submit'])){
-        $description =$_POST['incomeDescription'];
-        $amountUpdate = $_POST['amount'];
+        $description =mysqli_real_escape_string($conn, $_POST['incomeDescription']);
+        $amountUpdate = mysqli_real_escape_string($conn, $_POST['amount']);
 
         $newId= $_GET['id'];
 

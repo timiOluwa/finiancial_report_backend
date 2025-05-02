@@ -9,7 +9,7 @@
 </head>
 <body class="flex-column d-flex vh-100 justify-content-center align-items-center">
 
-        <form action="./include/register.php" class="bg-primary w-50 p-5 " method="post">
+        <form action="./include/register.php" class="bg-success w-50 p-5 " method="post">
                     <h2 class="fw-bolder">Login</h2>
                     <p class="introduce fw-bold">Welcome back to our page </p>
                    
