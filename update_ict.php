@@ -1,6 +1,6 @@
 <?php 
     include('./include/connect.php');
-    include('./include/header.php');
+    include('./include/head.php');
     if(isset($_GET['id'])){
         $id= $_GET['id'];
     }
@@ -39,8 +39,9 @@ include('./include/connect.php');
     }
 ?>
 
-
-<form action="update_ict.php?id=<?=$id?>" method="post" class="form-group">
+<?php include('./include/sidebar.php') ?>
+<form action="update_ict.php?id=<?=$id?>" method="post" class="form-group p-5"style="margin-left: 20%;" >
+            <h1 class="p-4 text-center rounded position-sticky bg-success text-white text-uppercase fw-bold  w-100" style="width: 95%"><i class="fas fa-computer mx-3"></i>update Basic ICT Records</h1>
             <label class="fw-bold mb-2 mt-1" for="incomeDescription">Description</label>
             <select required name="incomeDescription"  class="p-3 border-2 border-secondary rounded w-100" id="incomeDescription">
                 <option value="<?= $row['incomeDescription']?>"><?= $row['incomeDescription']?></option>
@@ -54,7 +55,7 @@ include('./include/connect.php');
                 <label for="amount" class="fw-bold mb-2 mt-1" >Amount</label>
                 <input class="p-3 border-1 border-secondary rounded w-100" value="<?= $row['amount']?>" required placeholder="Enter amount made" name="amount" type="number">
 
-                <button class="btn btn-primary mt-2 px-3" name="submit" type="submit">Update</button>
+                <button class="btn btn-primary w-100 mt-2 px-3" name="submit" type="submit">Update</button>
                 
 </form>
 

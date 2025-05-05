@@ -1,7 +1,7 @@
 <?php
 
 include('./include/connect.php');
-include('./include/header.php');
+include('./include/head.php');
  if(isset($_GET['id'])){
     $newid = $_GET['id'];
    
@@ -32,7 +32,9 @@ if(isset($_POST['submit'])){
 }
 
 ?>
-<form action="update_digital.php?id=<?=$newid?>" method="post">
+<?php include('./include/sidebar.php') ?>
+<form action="update_digital.php?id=<?=$newid?>" class="p-5" style="margin-left: 20%;" method="post">
+<h1 class="p-4 text-center rounded position-sticky bg-success text-white text-uppercase fw-bold  h-screen" style="width: 95%"><i class="fas fa-book me-3"></i>update Digital skill records</h1>
 <div class="form-group">
 <p class="text-left fw-bold text-uppercase ">Edit your Course</p>
 <select required name="courses" class="p-3 border-2 border-secondary rounded w-100" id="incomeDescription">

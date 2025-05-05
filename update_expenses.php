@@ -1,7 +1,7 @@
 <?php
 
 include('./include/connect.php');
-include('./include/header2.php');
+include('./include/head.php');
 
 if(isset($_GET['id'])){
     $id = $_GET['id'];
@@ -39,9 +39,9 @@ if(isset($_POST['submit'])){
 }
 
 ?>
-
-<form method="post" action="update_expenses.php?id=<?=$id?>" class="form-group flex-column d-flex">
-
+<?php include('./include/sidebar.php') ?>
+<form method="post" action="update_expenses.php?id=<?=$id?>" class="form-group p-5 flex-column d-flex" style="margin-left:20%;">
+<h1 class="p-4 text-center rounded position-sticky bg-danger bg-opacity-75 text-white text-uppercase fw-bold  h-screen" style="width: 95%"><i class="fas fa-receipt me-3"></i>update expenses records</h1>
     <p>Expenses for today</p>
     <input name="expensesDescription" value="<?=$expense['expensesDescription']?>" id="expensesDescription" class="p-3">
             

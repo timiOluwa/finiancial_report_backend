@@ -11,4 +11,4 @@
 
     <!-- printing service -->
     <h1 class="p-4 text-center bg-danger text-white text-uppercase fw-bold">Expenses Records</h1>
-    <div class="container">
+    
