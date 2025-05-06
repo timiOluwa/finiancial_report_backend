@@ -93,17 +93,18 @@ $amount_earned = $row["total"];
 
     <!-- main table in the body starts here -->
 
+    <?php include "./include/sidebar.php"; ?>
+    <section class="d-flex flex-column p-5  bg-opacity-50 " style="margin-left: 20%;">
+    
+        
 
-    <section class="d-flex bg-opacity-50 w-100 ">
-        <div class="w-100 d-flex ">
-
-            <?php include "./include/sidebar.php"; ?>
+            
 
             <!-- second side of view -->
-            <div class=" align-items-center bg-secondary bg-opacity-10 w-100 p-5 justify-content-center" style="margin-left: 20%; width: 100%;" >
-                <h1 class="p-4 text-center rounded position-sticky bg-success text-white text-uppercase fw-bold  h-screen" style="width: 95%"><i class="fas fa-book me-3"></i> Digital skill records</h1>
-                <div class="bg-white mt-1 py-5 px-4 bg-opacity-75  h-screen rounded"
-                style="width: 95%">
+            
+                <h1 class="p-4 w-100 text-center rounded position-sticky bg-success text-white text-uppercase fw-bold  h-screen" style="width: 95%"><i class="fas fa-book "></i> Digital skill records</h1>
+
+                <div class="bg-white shadow-sm p-5 w-100 mt-1  bg-opacity-75  h-screen rounded">
                 <?php
                 if ($from && $to) {
                     echo "<p class='text-success fw-bold'>Showing results from <strong>$from</strong> to <strong>$to</strong></p>";
@@ -142,7 +143,7 @@ $amount_earned = $row["total"];
                             <th class="px-2 py-2">Course</th>
                             <th class="px-2 py-2">No Of Student</th>
                             <th class="px-2 py-2">Amount</th>
-                            <th class="px-2 py-2">Edit</th>
+                            <th class="px-2 py-2">Action</th>
                         </tr>
                     </thead>
                     <?php
@@ -172,7 +173,7 @@ $amount_earned = $row["total"];
                                 <th class="border px-2 py-2"><?= number_format($skill["amount"]) ?></th>
                                 <th class="border px-2 py-2">
                                     <a href="update_digital.php?id=<?= $skill["id"] ?>"
-                                        class="btn text-white btn-success">Update</a>
+                                        class="btn text-white btn-warning">Edit</a>
 
                                 </th>
 
@@ -192,9 +193,9 @@ $amount_earned = $row["total"];
                     </tbody>
                 </table>
 
+            
             </div>
-            </div>
-        </div>
+        
         <?php include('./include/footer.php') ?>
     </section>
 </body>

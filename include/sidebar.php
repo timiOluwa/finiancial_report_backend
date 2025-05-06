@@ -1,26 +1,38 @@
-<div class="d-flex justify-content-start h-100 bg-success px-2 position-fixed top-0 start-20 flex-column  " style="width: 20%;">
-    <img src="assets\img\jeta-logo.png" class="w-75 p-4" alt="">
+<style>
+        .pink {
+                color: rgb(224, 197, 220);
+                margin-top: -10px;
+        }
+</style>
 
-    <ol class="list-unstyled mt-5 gap-1 d-flex flex-column">
+<div class="d-flex justify-content-start h-100 bg-success px-2 position-fixed top-0 start-20 flex-column  " style="width: 20%;">
+        <div class="d-flex flex-column px-5">
+                <img src="assets\img\jeta-logo.png" class=" " style="height:100px;" alt="">
+                <h4 class="text-end pink text-uppercase fw-bold">e-report</span>
+        </div>
+
+        <span class="border mt-2"></span>
+
+    <ol class="list-unstyled  gap-1 text-start d-flex flex-column">
 
         <li
-            class="d-flex text-uppercase w-100 p-1 w-full align-items-center text-white f">
-            <i class="fas fa-home fs-3 mx-3"></i><a href="dashboard.php"
-                class="text-white fs-6 text-decoration-none">Home</a>
+            class="d-flex text-uppercase mx-2 w-100 p-3 w-full align-items-center text-white ">
+            <i class="fas fa-home fs-4 "></i><a href="dashboard.php"
+                class="text-white fs-6 mx-2  text-decoration-none">Home</a>
         </li>
 
 
-        <li class="d-flex cursor-pointer align-items-center text-uppercase text-white p-4"><i class="fas fa-computer fs-3"></i><a href="basicIct.php" class="text-white mx-3 fs-6 text-decoration-none ">Basic Ict Records</a>
+        <li class="d-flex text-uppercase mx-2 w-100 p-3 w-full align-items-center text-white"><i class="fas fa-computer fs-4"></i><a href="basicIct.php" class="text-white  mx-2  fs-6 text-decoration-none ">Basic Ict Records</a>
         </li>
 
-        <li class="d-flex text-white ms-1 p-4 text-uppercase align-items-center text-xl"><i class="fas fa-book fs-3 "></i><a
-                href="digitalSkill.php" class="text-white text-decoration-none mx-3 fs-6">Digital Skill Academy Records</a></li>
+        <li class="d-flex text-uppercas mx-2 w-100 p-3 w-full align-items-center text-white"><i class="fas fa-book fs-4 "></i><a
+                href="digitalSkill.php" class=" mx-2 text-white text-decoration-none fs-6">Digital Skill Academy Records</a></li>
 
-        <li class="d-flex  text-white p-4 align-items-center text-uppercase text-xl"><i class="fas fa-receipt mx-3 fs-3"></i><a
-                href="expenses.php" class="text-white fs-6 text-decoration-none"> Expenses Record</a></li>
+        <li class="d-flex text-uppercase mx-2 w-100 p-3 w-full align-items-center text-white"><i class="fas fa-receipt fs-4"></i><a
+                href="expenses.php" class="text-white fs-6 mx-2  text-decoration-none"> Expenses Record</a></li>
 
-        <li class="d-flex  text-white text-uppercase p-4 text-xl"><i class="fas fa-clipboard mx-3 fs-3"></i><a
-                href="" class="text-white text-decoration-none fs-6 ">Minutes</a></li>
+        <li class="d-flex text-uppercase mx-2 w-100 p-3 w-full align-items-center text-white"><i class="fas fa-clipboard  fs-4"></i><a
+                href="minute.php" class="text-white mx-2  text-decoration-none fs-6 ">Minutes</a></li>
 
     </ol>
 </div>
